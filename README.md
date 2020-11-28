@@ -1,4 +1,4 @@
-# pot-game
+# Deutsches Spiel
 A Game made in HTML5
 ![picture](screenshot.png)
 
