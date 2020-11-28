@@ -21,7 +21,7 @@ $ node server.js
 
 Open a Browser with the following URL http://localhost:8081/ to see the game
 
-##FAQ
+## FAQ
 Tested with the following versions (defined in package.json file)
 	"express": "^4.17.1",
     "socket.io": "^2.3.0"
