@@ -1,0 +1,22 @@
+﻿[
+	{
+		"name": "Artikelspiel",
+		"description": "Welche Artikel ist richtig?"
+	},
+	{
+		"name": "Gegensätzespiel",
+		"description": "Was ist der Gegensatz zu...?"
+	},
+	{
+		"name": "Wörterspiel",
+		"description": "Was bedeutet...?"
+	},
+	{
+		"name": "Perfektspiel",
+		"description": "Was ist der Perfektform von...?"
+	},
+	{
+		"name": "Präpositionenspiel",
+		"description": "Welche Präposition passt?"
+	}
+]

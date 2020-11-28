@@ -1,0 +1,26 @@
+{
+  "name": "Phaser",
+  "version": "1.0.0",
+  "description": "A Game made in Phaser 3 ![picture](screenshot.png)",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nothor/pot-game.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nothor/pot-game/issues"
+  },
+  "homepage": "https://github.com/nothor/pot-game#readme"
+}

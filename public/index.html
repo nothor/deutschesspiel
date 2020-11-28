@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Deutsches Spiel</title>
+  
+  	<!--Web Icon-->
+	<link rel="shortcut icon" href="img/icons/Germany-icon.png">
+	
+	<!--First of All check if the Browser used is Firefox-->
+	<script>
+		var sBrowser = navigator.appName;
+			if(sBrowser!= "Netscape"){
+			alert("Please the Portal must to be opened with Firefox.");
+		}
+	</script>
+  
+	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+  
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="page-header">
+			<h1>Das deutsche Spiel<p><small>W&aumlhlen Sie ein Spiel aus...</small></p></h1>
+		</div>
+	</div>
+	<div class="jumbotron">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-4 text-center">
+					<p><a class="btn btn-primary btn-lg btn-block active" href="game.html?id=0" role="button">Artikelspiel</a></p>
+				</div>
+				<div class="col-sm-8">
+					<div class="row">
+						<div class="col-xs-9">
+							<div class="progress">
+								<div id="game-progress-0" class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 50%;">
+									50%
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-3">
+							<div class="pull-right">
+							<h4 id="score">
+								<span id="correct-label-0" class="label label-success">10</span>
+								<span id="fail-label-0" class="label label-danger">5</span>
+							</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4 text-center">
+					<p><a class="btn btn-primary btn-lg btn-block active" href="game.html?id=1" role="button">Gegens&aumltzespiel</a></p>
+				</div>
+				<div class="col-sm-8">
+					<div class="row">
+						<div class="col-xs-9">
+							<div class="progress">
+								<div id="game-progress-1" class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 50%;">
+									50%
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-3">
+							<div class="pull-right">
+							<h4 id="score">
+								<span id="correct-label-1" class="label label-success">10</span>
+								<span id="fail-label-1" class="label label-danger">5</span>
+							</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4 text-center">
+					<p><a class="btn btn-primary btn-lg btn-block active" href="game.html?id=2" role="button">W&oumlrterspiel</a></p>
+				</div>
+				<div class="col-sm-8">
+					<div class="row">
+						<div class="col-xs-9">
+							<div class="progress">
+								<div id="game-progress-2" class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 50%;">
+									50%
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-3">
+							<div class="pull-right">
+							<h4 id="score">
+								<span id="correct-label-2" class="label label-success">10</span>
+								<span id="fail-label-2" class="label label-danger">5</span>
+							</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4 text-center">
+					<p><a class="btn btn-primary btn-lg btn-block active" href="game.html?id=3" role="button">Perfektspiel</a></p>
+				</div>
+				<div class="col-sm-8">
+					<div class="row">
+						<div class="col-xs-9">
+							<div class="progress">
+								<div id="game-progress-3" class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 50%;">
+									50%
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-3">
+							<div class="pull-right">
+							<h4 id="score">
+								<span id="correct-label-3" class="label label-success">10</span>
+								<span id="fail-label-3" class="label label-danger">5</span>
+							</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4 text-center">
+					<p><a class="btn btn-primary btn-lg btn-block active" href="game.html?id=4" role="button">Pr&aumlpositionenspiel</a></p>
+				</div>
+				<div class="col-sm-8">
+					<div class="row">
+						<div class="col-xs-9">
+							<div class="progress">
+								<div id="game-progress-4" class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 50%;">
+									50%
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-3">
+							<div class="pull-right">
+							<h4 id="score">
+								<span id="correct-label-4" class="label label-success">10</span>
+								<span id="fail-label-4" class="label label-danger">5</span>
+							</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>			
+		</div>
+	</div>
+	<div id="footer">
+		<div class="container-fluid"></div>
+	</div>
+	
+	<!--Socket needed for Server-Client mode with node-->
+	<script src="/socket.io/socket.io.js"></script>
+	<script type="text/javascript" src="lib/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="lib/bootstrap/js/bootstrap.js"></script>
+	<script type="text/javascript" src="lib/indexedDB.js"></script>
+	<script type="text/javascript" src="lib/main.js"></script>
+
+</body>
+</html>
