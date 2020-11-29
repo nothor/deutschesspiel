@@ -126,7 +126,7 @@ $(document).ready(function () {
 	//Load IndexedDB
 	startDB(function(){
 		//Automatically Load Game as Callback
-		loadGame();
+		loadGame(playGame); //Inside loadGame execute PlayGame as Callback --> To wait before the data is loaded.
 	});
 
 	/*LISTENERS*/ 
@@ -191,7 +191,7 @@ $(document).ready(function () {
 	
 	$(document).on('click','#load-game', function(e) {
 		//load Calendars Previously Saved
-		loadGame();
+		loadGame(playGame); //Inside loadGame execute PlayGame as Callback --> To wait before the data is loaded.
 		if(typeof oCurrentGameStatus === 'undefined'){	
 			alert("There isn't any previous saved Game!");
 		}
@@ -244,6 +244,7 @@ function newGame() {
 		aIndexPosition.push(j);
 	}
 	
+	console.log("newGame: Set a new Game")
 	playGame();
 }
 
@@ -259,7 +260,7 @@ function saveGame() {
 	addAll();
 }
 	
-function loadGame() {
+function loadGame(callback) {	//We must add a Callback and load PlayGame, to assure is the last thing loaded
 	
 	//Everytime we load a game we have to iniValues
 	oGamesStatus = [];
@@ -291,12 +292,15 @@ function loadGame() {
 			clearInterval(iTimerID);
 			
 			//StartGame
-			playGame();		
+			callback(); //playGame();		
 		}
 		else {
 			newGame();
 		}
 	});
+	
+	//Log
+	console.log("loadGame: Previous GameStatus loaded --> must be Second")
 }
 
 function iniGame(){
@@ -333,6 +337,9 @@ function iniGame(){
 		//Cargamos las preposiciones para el Juego 4
 		if(iCurrentGameId == 4){ iniPrepositionList(); }	
 	});	
+	
+	//Log
+	console.log("iniGame: GameDB loaded --> must be First")
 }
 
 function iniPrepositionList(){
