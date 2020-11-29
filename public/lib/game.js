@@ -186,7 +186,7 @@ $(document).ready(function () {
 	});
 	
 	$(document).on('click','#new-game', function(e) {
-		newGame();
+		newGame(playGame);
 	});
 	
 	$(document).on('click','#load-game', function(e) {
@@ -230,7 +230,7 @@ $(document).ready(function () {
  
 });
 
-function newGame() {
+function newGame(callback) {
 	iCorrect = 0;
 	iFail = 0;
 	aIndexPosition = [];
@@ -245,7 +245,7 @@ function newGame() {
 	}
 	
 	console.log("newGame: Set a new Game")
-	playGame();
+	callback(); //playGame();
 }
 
 function saveGame() {
@@ -295,7 +295,7 @@ function loadGame(callback) {	//We must add a Callback and load PlayGame, to ass
 			callback(); //playGame();		
 		}
 		else {
-			newGame();
+			newGame(playGame);
 		}
 	});
 	
@@ -424,7 +424,8 @@ function playGame(){
 	
 	var aOptions = [];
 
-	//Primero miramos si se cumplen condiciones para continuar
+	//BUG! La primera vez que se carga aparece
+	//Primero miramos si se cumplen condiciones para continuar aIndexPosition.length = 0!!
 	if (!(aIndexPosition.length > 0)) {	//Se puede añadir la condicion vidas == 0
 		endGame();
 	} else {	
